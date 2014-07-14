@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp">
+
+           <TableRow
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:layout_marginTop="5dp">
+
+
+                   <EditText
+                       android:layout_width="350dp"
+                       android:layout_height="40dp"
+                       android:inputType="text"
+                       android:layout_marginLeft="5dp"
+                       android:hint="Nome do evento"/>
+
+           </TableRow>
+            <TableRow
+                android:layout_marginTop="60dp">
+                <LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="De:"
+                        android:textSize="25dp"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout android:gravity="center">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:layout_marginLeft="5dp"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:id="@+id/edt_deData"
+                        android:onClick="includeDate"/>
+                    <EditText
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="time"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/edt_deTime"
+                        android:focusable="false"
+                        android:onClick="includeTime"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="10dp">
+                <LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="a:"
+                        android:textSize="25dp"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout android:gravity="center">
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:layout_marginLeft="5dp"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:id="@+id/edt_aData"
+                        android:onClick="includeDate"/>
+                    <EditText
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="time"
+                        android:layout_marginLeft="5dp"
+                        android:focusable="false"
+                        android:id="@+id/edt_aTime"
+                        android:onClick="includeTime"/>
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+</LinearLayout>

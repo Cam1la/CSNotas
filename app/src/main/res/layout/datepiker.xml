@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <TableRow android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="54dp"
+        android:background="@color/cinzaEscuro">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="54dp"
+            android:text="Hora"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+    </TableRow>
+
+    <TableRow android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/Snow2">
+
+
+    <DatePicker
+        android:layout_width="500dp"
+        android:layout_height="fill_parent"
+        android:id="@+id/myDatePicker"
+        android:background="@color/Snow4"/>
+
+    </TableRow>
+    <TableRow android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/cinzaEscuro">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Ok"
+            android:id="@+id/btn_OkDate"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:background="@color/cinzaEscuro"
+            android:onClick="includeTime"/>
+    </TableRow>
+</TableLayout>
